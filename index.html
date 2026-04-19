@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RPU Hub - RAGE</title>
+<title>RAGE PD - RPU</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0b0f14;
-    color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0a0d12;
+    color: #e6edf3;
 }
 
 /* HEADER */
@@ -19,36 +19,24 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: rgba(0,0,0,0.8);
-    position: sticky;
-    top: 0;
+    background: #0d1117;
+    border-bottom: 1px solid #1f6feb;
 }
 
 header h1 {
-    font-size: 20px;
-}
-
-nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #1f6feb;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 /* HERO */
 .hero {
-    height: 300px;
+    height: 400px;
     background: url('https://images.unsplash.com/photo-1588615419954-3c8c6fefc2b7') center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     position: relative;
 }
 
@@ -56,117 +44,64 @@ nav a:hover {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.6);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), #0a0d12);
 }
 
-.hero h2, .hero p {
+.hero h1, .hero p {
     position: relative;
     z-index: 1;
 }
 
-/* SECTIONS */
+.hero h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    color: #8b949e;
+}
+
+/* CONTENT */
 .section {
-    padding: 40px 20px;
-    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
 }
 
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.button {
-    padding: 12px 20px;
-    background: #1c1f26;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background: #1f6feb;
-}
-
-/* CARDS */
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: #161b22;
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #000;
-    font-size: 14px;
+.section h2 {
+    margin-bottom: 10px;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <h1>RPU Hub</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Training</a>
-        <a href="#">Subdivisions</a>
-        <a href="#">Drivers</a>
-        <a href="#">Resources</a>
-    </nav>
+    <h1>RAGE PD • RPU</h1>
 </header>
 
 <section class="hero">
-    <h2>Roads Policing Unit</h2>
-    <p>Specialist unit focused on tactical driving, pursuit management, and road safety across RAGE.</p>
+    <h1>ROADS POLICING UNIT</h1>
+    <p>Internal Police System</p>
 </section>
 
 <section class="section">
-    <h2>About RPU</h2>
-    <p>The Roads Policing Unit delivers advanced traffic enforcement and proactive patrol operations.</p>
+    <h2>Overview</h2>
+    <p>
+        The Roads Policing Unit (RPU) operates within RAGE Police Department to deliver 
+        advanced traffic enforcement, pursuit management, and proactive patrol operations.
+    </p>
 
-    <h3>Requirements</h3>
-    <p>Response Officer+ with pursuit and communications training.</p>
+    <p>
+        Officers assigned to RPU are trained in high-speed response, tactical vehicle control, 
+        and road safety enforcement across all jurisdictions.
+    </p>
+
+    <p>
+        Access to this system is restricted to authorised personnel only.
+    </p>
 </section>
-
-<section class="section">
-    <h2>Quick Access</h2>
-    <div class="buttons">
-        <div class="button">Mentor Application</div>
-        <div class="button">Request Training</div>
-        <div class="button">Uniforms</div>
-        <div class="button">Appeals</div>
-        <div class="button">Promotion Request</div>
-        <div class="button">TRIDENT Drivers</div>
-    </div>
-</section>
-
-<section class="section">
-    <h2>Unit Status</h2>
-    <div class="cards">
-        <div class="card">👮 Active Officers<br>24</div>
-        <div class="card">🚓 Patrol Units<br>12</div>
-        <div class="card">📅 Next Training<br>Friday</div>
-        <div class="card">📢 Announcement<br>No updates</div>
-    </div>
-</section>
-
-<footer>
-    RPU Hub – RAGE<br>
-    Internal Use Only
-</footer>
 
 </body>
 </html>
